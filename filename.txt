@@ -1,0 +1,5 @@
+1 filename 
+2 this is document example for 10.py
+line 3
+line 4
+line 5
