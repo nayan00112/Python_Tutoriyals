@@ -4,7 +4,6 @@
 An exception is a programm err that happens when somthings goes wrong due to incorrect code or input
 """
 
-
 """
 This code produce a ZeroDivisionError exception by trying to divide 7 by 0.
 """
@@ -17,7 +16,6 @@ This code produce a ZeroDivisionError exception by trying to divide 7 by 0.
 print(x/y)
 ZeroDivisionError: division by zero
 """
-
 
 """
 There are a lot of different types of exceptions:
@@ -35,7 +33,7 @@ There are a lot of different types of exceptions:
 """
 The try/except block allows you to handle exceptions.
 they try block contains code that might throw an exception.
-If that exception occurs, the code in the try block stops, and the cpde in the except block is run.
+If that exception occurs, the code in the try block stops, and the code in the except block is run.
 """
 #for example
 x = 7

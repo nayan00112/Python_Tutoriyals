@@ -17,12 +17,14 @@ f = open("filename.txt", "r")
 print(f.read()) # for read the file
 """
 Hear are the other modes avaliable:
-w - write mode
-a - append mode
-b - binary mode
-x - create mode
+    w - write mode
+    a - append mode
+    b - binary mode
+    x - create mode
 """
+
 #-------------------------------------------------------------------
+
 #read
 """
 The read() method is used to read the content of an opened file
@@ -70,6 +72,7 @@ f.write("Some append text")
 #-------------------------------------------------------------------
 
 # close
+
 """
 The close() method is used to close the file after reading/writing.
 """

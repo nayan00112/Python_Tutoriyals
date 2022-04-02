@@ -17,7 +17,7 @@ The split() method turns a string withh a certain separator into a list.
 """
 
 text = 'spam, angle, ham'
-print(text.split(", ")) # ['spam', 'angle', 'ham'] (((This is good i think.)))
+print(text.split(", ")) # ['spam', 'angle', 'ham'] (((This is oky for this example to split by ", ".)))
 print(text.split(",")) # ['spam', ' angle', ' ham']
 print(text.split(" ")) # ['spam,', 'angle,', 'ham']
 

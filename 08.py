@@ -1,6 +1,6 @@
 # Modules
 """
-Modules arre like libraries of code,
+Modules are like libraries of code,
 contatining code that can be reused to
 perform certain task.
 
