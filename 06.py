@@ -4,7 +4,7 @@ def welcome():
     print("Welcome")
 
 welcome()
-# The code above defines a function calleed 'welcome()' using the 'def' keyword and callit.
+# The code above defines a function calleed 'welcome()' using the 'def' keyword and call it.
 
 
 #Function argument
