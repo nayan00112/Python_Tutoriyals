@@ -8,3 +8,10 @@ for i in range(2, m.ceil(m.pow(num1, 0.5))):
         break
 else:
     print("Prime")
+
+# Output:
+# Enter the number:78
+# Non Prime
+
+# Enter the number:7 
+# Prime
