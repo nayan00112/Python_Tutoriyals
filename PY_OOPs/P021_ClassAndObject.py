@@ -8,6 +8,13 @@ class Car:
     def stop(self):
         print("Car is stopped.", self.name)
 
+c = Car("Bugatti")
+Car.run(c)
+Car.stop(c)
+# Above two lines same as below two lines
+c.run()
+c.stop()
+
 c1 = Car("BMW")
 c2 = Car("Farari")
 
@@ -17,6 +24,10 @@ c1.stop()
 c2.stop()
 
 # Output:
+# Car is running. Bugatti
+# Car is stopped. Bugatti
+# Car is running. Bugatti
+# Car is stopped. Bugatti
 # Car is running. BMW
 # Car is running. Farari
 # Car is stopped. BMW
