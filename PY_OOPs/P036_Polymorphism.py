@@ -25,10 +25,9 @@ class Laptop:
     def code(self, ide):
         ide.execute()
 
+l1 = Laptop()
 
 ide = VS_CodeEditor()
-
-l1 = Laptop()
 l1.code(ide)  # Run Compile Debug
 
 ide = Notepade()
