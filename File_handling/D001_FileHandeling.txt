@@ -1,0 +1,72 @@
+File handling in Python is a crucial aspect of working with files, which allows you to read from and write to files on your computer's storage. 
+When opening a file, you can specify various arguments that control how the file is treated and accessed. 
+Here are some of the commonly used file opening modes and their meanings:
+
+1. **'r' (Read)**:
+   - Opens the file for reading (default mode).
+   - Throws an error if the file doesn't exist.
+   - Cursor is positioned at the beginning of the file.
+
+file = open('filename.txt', 'r')
+
+
+2. **'w' (Write)**:
+   - Opens the file for writing.
+   - Creates a new file if it doesn't exist.
+   - If the file exists, it truncates (clears) its contents.
+   - Cursor is positioned at the beginning of the file.
+
+file = open('filename.txt', 'w')
+
+
+3. **'a' (Append)**:
+   - Opens the file for writing.
+   - Creates a new file if it doesn't exist.
+   - If the file exists, it appends data to the end of the file without truncating.
+   - Cursor is positioned at the end of the file.
+
+file = open('filename.txt', 'a')
+
+
+4. **'r+' (Read and Write)**:
+   - Opens the file for both reading and writing.
+   - Throws an error if the file doesn't exist.
+   - Cursor is positioned at the beginning of the file.
+   - You can read and write to the file using the same handle.
+
+file = open('filename.txt', 'r+')
+
+
+5. **'w+' (Write and Read)**:
+   - Opens the file for both reading and writing.
+   - Creates a new file if it doesn't exist.
+   - If the file exists, it truncates its contents.
+   - Cursor is positioned at the beginning of the file.
+   - You can read and write to the file using the same handle.
+
+file = open('filename.txt', 'w+')
+
+
+6. **'a+' (Append and Read)**:
+   - Opens the file for both reading and writing.
+   - Creates a new file if it doesn't exist.
+   - If the file exists, it appends data to the end of the file without truncating.
+   - Cursor is positioned at the end of the file.
+   - You can read and write to the file using the same handle.
+
+file = open('filename.txt', 'a+')
+
+
+It's important to note that when you're done working with a file, you should close it using the `close()` method:
+
+file.close()
+
+
+A better practice is to use a `with` statement, which ensures that the file is properly closed even if an exception occurs:
+
+with open('filename.txt', 'r') as file:
+    # Perform file operations here
+# File is automatically closed outside the 'with' block
+
+
+Remember that using the `with` statement is recommended to avoid resource leaks and potential issues with file handling.
