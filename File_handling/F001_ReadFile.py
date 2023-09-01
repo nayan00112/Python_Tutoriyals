@@ -1,5 +1,5 @@
 
-a = open( "File_handling/T001_file.txt", 'r',)
+a = open( "File_handling/T001_file.txt", 'r')
 
 print(a.read())
 
@@ -8,3 +8,4 @@ a.close()
 # Output:
 # Hello, How are you?
 # I am Nayan.
+# This is simple text-file.
