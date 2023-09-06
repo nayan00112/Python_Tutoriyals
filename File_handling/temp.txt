@@ -1,0 +1,4 @@
+Hello,
+I am Nayan.
+I am learning python. 
+I like to solve problems through programming.
