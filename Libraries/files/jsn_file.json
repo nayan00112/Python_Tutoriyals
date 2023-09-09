@@ -1,0 +1,58 @@
+{
+    "day1": {
+        "morning": "Good morning",
+        "evening": "Good evening"
+    },
+    "day2": {
+        "morning": "Good good morning",
+        "evening": "Good good evening",
+        "night": "good Good night"
+    },
+    "day3": {
+        "morning": [
+            "Good",
+            "good",
+            "good",
+            "morning"
+        ],
+        "evening": [
+            "Good",
+            "good",
+            "good",
+            "evening"
+        ],
+        "night": "good good night",
+        "early_mornong": {
+            "good1": "Surya namaskar",
+            "good2": "Excersics"
+        }
+    },
+    "day4": {
+        "morning": [
+            "Good",
+            "good",
+            "good",
+            "morning"
+        ],
+        "evening": [
+            "Good",
+            "good",
+            "good",
+            "evening"
+        ],
+        "night": "good good night",
+        "early_mornong": {
+            "good1": "Surya namaskar",
+            "good2": "Excersics"
+        }
+    },
+    "day5": {
+        "morning": "Good morning",
+        "evening": "Good evening"
+    },
+    "day6": {
+        "morning": "Good good morning",
+        "evening": "Good good evening",
+        "night": "good Good night"
+    }
+}
