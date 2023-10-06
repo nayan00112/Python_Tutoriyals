@@ -1,0 +1,29 @@
+Identifying empty value in pandas
+
+To identify empty values in a pandas DataFrame, you can use the following methods1:
+
+1. Use the `isnull()` function to detect missing values in an array-like object.
+2. Use the `isna()` DataFrame method to find and count cells with empty values in DataFrame columns.
+3. Use the `pd.isnull()` function to check if a specific cell is empty in a pandas DataFrame.
+
+If you want to check if a specific cell is empty in a pandas DataFrame, you can use the following syntax⁵:
+
+    ```python
+    # Check if value in first row of column 'A' is empty
+    print(pd.isnull(df.loc[0, 'A']))
+
+    # Print value in first row of column 'A'
+    print(df.loc[0, 'A'])
+    ```
+
+Please note that empty strings are considered missing values and can be detected using these methods³. If you are looking for empty strings specifically, you can use additional techniques such as `applymap()`³.
+
+Let me know if there's anything else I can help you with!
+
+Source: Conversation with Bing, 18/9/2023
+(1) Pandas Tutorial - isnull(), isin(), empty() - MLK - Machine Learning .... https://machinelearningknowledge.ai/pandas-tutorial-isnull-isin-empty/.
+(2) How to Check if Cell is Empty in Pandas DataFrame - Statology. https://www.statology.org/pandas-check-if-cell-is-empty/.
+(3) Find empty or NaN entry in Pandas Dataframe - Stack Overflow. https://stackoverflow.com/questions/27159189/find-empty-or-nan-entry-in-pandas-dataframe.
+(4) . https://bing.com/search?q=identifying+empty+value+in+pandas.
+(5) How to check a cell is empty or nan in pandas DataFrames? - EasyTweaks.com. https://www.easytweaks.com/check-cell-empty-nan-pandas-dataframe/.
+(6) undefined. https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html.
