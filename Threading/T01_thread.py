@@ -13,8 +13,8 @@ class Hii(Thread):
 t1 = Hello()
 t2 = Hii()
 
-# t1.run()
-# t2.run()
+t1.run()
+t2.run()
 # Output (using above two lines, Not use thread but simple method call):
 # Hello
 # Hello
