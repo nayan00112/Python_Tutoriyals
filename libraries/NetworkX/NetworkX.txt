@@ -1,0 +1,102 @@
+NetworkX provides a wide range of methods and functions to work with graphs. Some key ones include:
+
+1. **Graph Creation:** Functions to create different types of graphs, like `Graph()`, `DiGraph()` for directed graphs, `MultiGraph()`, and `MultiDiGraph()` for multigraphs.
+
+2. **Nodes and Edges:** Methods to add nodes and edges to graphs, remove them, access node or edge attributes, and check for their existence.
+
+3. **Algorithms:** Various algorithms for graph analysis such as shortest paths (`shortest_path()`, `shortest_path_length()`), centrality measures (`degree_centrality()`, `betweenness_centrality()`), clustering, and more.
+
+4. **Graph Information:** Functions to get information about the graph, like `number_of_nodes()`, `number_of_edges()`, `nodes()`, `edges()`, etc.
+
+5. **Drawing and Visualization:** Tools to visualize graphs using Matplotlib or other plotting libraries (`draw()`, `draw_networkx()`, etc.).
+
+These are just a few examples; NetworkX has a rich set of functionalities. If you have a specific task in mind or need help with a particular function, feel free to ask!
+
+
+code:
+
+Certainly! Here's an example of how you can create a simple graph using NetworkX:
+
+```python
+import networkx as nx
+
+# Create an empty undirected graph
+G = nx.Graph()
+
+# Add nodes
+G.add_node(1)
+G.add_nodes_from([2, 3, 4])  # Adding multiple nodes at once
+
+# Add edges
+G.add_edge(1, 2)
+G.add_edges_from([(1, 3), (1, 4), (2, 3)])  # Adding multiple edges at once
+
+# Print nodes and edges
+print("Nodes:", G.nodes())
+print("Edges:", G.edges())
+```
+
+This code creates an undirected graph (`nx.Graph()`), adds nodes (1, 2, 3, 4), and creates edges between those nodes. Finally, it prints the nodes and edges of the graph.
+
+
+
+Applay any algorithm on graph 
+
+Sure, here's an example applying Dijkstra's algorithm to find the shortest path between nodes in a graph using NetworkX:
+
+```python
+import networkx as nx
+
+# Create a directed graph
+G = nx.DiGraph()
+
+# Add edges with weights
+G.add_weighted_edges_from([(1, 2, 1), (1, 3, 4), (2, 3, 1), (2, 4, 3), (3, 4, 1), (3, 5, 2), (4, 5, 3)])
+
+# Calculate the shortest path from node 1 to node 5
+shortest_path = nx.shortest_path(G, source=1, target=5, weight='weight')
+shortest_path_length = nx.shortest_path_length(G, source=1, target=5, weight='weight')
+
+print("Shortest Path:", shortest_path)
+print("Shortest Path Length:", shortest_path_length)
+```
+
+This code creates a directed graph, adds weighted edges, and then calculates the shortest path and its length between nodes 1 and 5 using Dijkstra's algorithm (`nx.shortest_path()` and `nx.shortest_path_length()`). Adjust the nodes and edges to experiment with different graph structures and see how the algorithm works.
+
+
+
+some functions/methods used in networkx lib
+
+Certainly! NetworkX offers a rich collection of functions and methods for graph manipulation, analysis, and visualization. Here are some commonly used ones:
+
+1. **Graph Creation:**
+    - `Graph()`, `DiGraph()`, `MultiGraph()`, `MultiDiGraph()`: Create various types of graphs.
+
+2. **Nodes and Edges Manipulation:**
+    - `add_node()`, `add_nodes_from()`: Add nodes to the graph.
+    - `add_edge()`, `add_edges_from()`: Add edges to the graph.
+    - `remove_node()`, `remove_edge()`: Remove nodes or edges from the graph.
+    - `nodes()`, `edges()`: Get node and edge lists.
+    - `number_of_nodes()`, `number_of_edges()`: Get the number of nodes and edges.
+
+3. **Accessing Node/Edge Attributes:**
+    - `nodes[node]['attribute']`: Access and modify node attributes.
+    - `edges[edge]['attribute']`: Access and modify edge attributes.
+
+4. **Algorithms:**
+    - Shortest Paths: `shortest_path()`, `shortest_path_length()`
+    - Centrality Measures: `degree_centrality()`, `betweenness_centrality()`, `closeness_centrality()`
+    - Clustering: `average_clustering()`, `triangles()`
+    - Connectivity: `is_connected()`, `weakly_connected_components()`, `strongly_connected_components()`
+    - Network Flow: `maximum_flow()`, `minimum_cut()`
+
+5. **Drawing and Visualization:**
+    - `draw()`, `draw_networkx()`: Draw the graph using Matplotlib or other plotting libraries.
+    - `spring_layout()`, `circular_layout()`, `random_layout()`: Layout algorithms for graph visualization.
+
+6. **Graph Information:**
+    - `info()`: Provides information about the graph, including nodes, edges, etc.
+    - `degree()`: Get the degree of nodes.
+    - `neighbors()`: Get the neighbors of a node.
+
+These are just a few examples; NetworkX offers a comprehensive set of functions for graph creation, manipulation, analysis, and visualization. The specific function to use often depends on the task you want to perform on your graph data.
