@@ -1,0 +1,71 @@
+Pandas is a powerful Python library for data manipulation and analysis. Below is a list of some of the most commonly used functions and methods in Pandas along with a brief description of their work. Please note that Pandas is a vast library, and this list is not exhaustive, but it covers many essential functions:
+
+Data Structures:
+1. `pd.Series(data)`: Create a one-dimensional labeled array (Series) capable of holding various data types.
+2. `pd.DataFrame(data)`: Create a two-dimensional labeled data structure with columns that can hold different data types.
+
+Reading and Writing Data:
+3. `pd.read_csv()`: Read data from a CSV file into a DataFrame.
+4. `pd.read_excel()`: Read data from an Excel file into a DataFrame.
+5. `df.to_csv()`: Write a DataFrame to a CSV file.
+6. `df.to_excel()`: Write a DataFrame to an Excel file.
+
+Data Exploration:
+7. `df.head()`: Display the first n rows of a DataFrame.
+8. `df.tail()`: Display the last n rows of a DataFrame.
+9. `df.shape`: Return the dimensions of the DataFrame (rows, columns).
+10. `df.info()`: Display information about the DataFrame, including data types and missing values.
+11. `df.describe()`: Generate summary statistics of numeric columns.
+12. `df.columns`: Access column names.
+13. `df.dtypes`: Return data types of each column.
+14. `df.value_counts()`: Count unique values in a column.
+15. `df.isna()`: Check for missing values.
+16. `df.dropna()`: Remove rows or columns with missing values.
+
+Data Selection and Indexing:
+17. `df.iloc[]`: Select data by integer-based indexing.
+18. `df.loc[]`: Select data by label-based indexing.
+19. `df[column_name]` or `df.column_name`: Select a single column.
+20. `df[['col1', 'col2']]`: Select multiple columns.
+21. `df.iloc[:, start_col:end_col]`: Select a range of columns.
+22. `df[df['column'] > value]`: Filter rows based on a condition.
+23. `df.sort_values()`: Sort the DataFrame by column(s).
+
+Data Cleaning and Transformation:
+24. `df.rename()`: Rename columns.
+25. `df.drop()`: Drop specified labels from rows or columns.
+26. `df.fillna()`: Fill missing values.
+27. `df.replace()`: Replace values.
+28. `df.groupby()`: Group data by one or more columns.
+29. `df.pivot_table()`: Create a pivot table.
+30. `df.melt()`: Unpivot/melt the DataFrame.
+31. `df.apply()`: Apply a function to each element or row/column.
+32. `df.merge()`: Merge two DataFrames.
+33. `df.join()`: Join DataFrames based on their indexes.
+
+Data Aggregation and Statistics:
+34. `df.mean()`, `df.sum()`, `df.median()`: Compute basic statistics.
+35. `df.groupby().agg()`: Perform custom aggregations.
+36. `df.corr()`, `df.cov()`: Calculate correlation and covariance.
+37. `df.value_counts()`: Count unique values.
+38. `df.nunique()`: Count unique values in each column.
+39. `df.unique()`: Get unique values in a column.
+
+Time Series Data:
+40. `pd.to_datetime()`: Convert a column to datetime format.
+41. `df.resample()`: Resample time series data.
+
+Plotting:
+42. `df.plot()`: Create basic plots using Matplotlib.
+
+Other:
+43. `pd.concat()`: Concatenate DataFrames.
+44. `pd.merge()`: Merge DataFrames using SQL-style joins.
+45. `df.sample()`: Randomly sample rows from a DataFrame.
+46. `df.drop_duplicates()`: Remove duplicate rows.
+47. `pd.cut()`, `pd.qcut()`: Discretize data into bins.
+48. `df.set_index()`: Set the DataFrame index.
+49. `df.reset_index()`: Reset the index of a DataFrame.
+50. `pd.options.display`: Control display options for DataFrames.
+
+This is just a selection of commonly used Pandas functions. The library is quite extensive, and you can refer to the official Pandas documentation for more details and examples: https://pandas.pydata.org/pandas-docs/stable/index.html
