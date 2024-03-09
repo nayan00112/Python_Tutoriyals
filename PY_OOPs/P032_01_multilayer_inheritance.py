@@ -109,3 +109,29 @@ oo = OOO()
 # in OOO
 # in NNN super
 # MMM super super
+
+
+
+
+# In Python, if a subclass has its own __init__ method and does not explicitly call the __init__ method of its parent class using super().__init__(), the constructor of the parent class won't be automatically called.
+
+# In your Python example:
+
+
+# class B:
+#     def __init__(self):
+#         print("in B super")
+
+# class A(B):
+#     def __init__(self):
+#         print("in A")
+
+# aa = A()
+
+
+# The output will be:
+
+# in A
+
+
+# This is because the __init__ method of class A does not call the __init__ method of its parent class B.
