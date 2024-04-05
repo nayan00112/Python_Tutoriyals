@@ -98,7 +98,13 @@ print(df.loc["II"])
 # If your data sets are stored in a file, Pandas can load them into a DataFrame.
 
 my_csv_file = read_csv(r"E:\pythonTutoriyals\Libraries\files\T001_csvfile.csv")
+'''
+In Python, the 'r' before a string literal indicates a raw string literal. It tells Python interpreter to treat backslashes (\) as literal characters, rather than as escape characters.
 
+For example, in Windows file paths, backslashes are used as directory separators, like in your example: `r"E:\pythonTutoriyals\Libraries\files\T001_csvfile.csv"`. Without the 'r' prefix, Python would interpret the backslashes as escape characters. However, by prefixing the string with 'r', you're telling Python to treat it as a raw string, so the backslashes are not escaped.
+
+In the context of your code snippet, `read_csv(r"E:\pythonTutoriyals\Libraries\files\T001_csvfile.csv")`, it's being used to specify the file path to the CSV file you want to read using pandas' `read_csv` function.
+'''
 print(my_csv_file)
 #       Name   Roll Number                  Email  Date of Birth
 # 0    Nayan            12      nayan12@gmail.com     14/06/2003
